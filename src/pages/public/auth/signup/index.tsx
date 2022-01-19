@@ -211,6 +211,11 @@ const Section = styled.section`
     height: 40px;
     display: block;
     margin: 30px auto;
+
+    :focus {
+      border: none;
+      box-shadow: none;
+    }
   }
 
   .terms-para {
@@ -221,6 +226,7 @@ const Section = styled.section`
     line-height: 16px;
     padding: 0 42px;
     margin-bottom: 19px;
+    margin-top: 20px;
     a {
       color: #885fff;
       text-decoration: none;

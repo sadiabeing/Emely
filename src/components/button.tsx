@@ -28,4 +28,5 @@ const CustomButton = styled(Button)`
   line-height: 22px;
   font-family: ManropeSemibold;
   color: #ffffff;
+  margin: 10px auto !important;
 `;

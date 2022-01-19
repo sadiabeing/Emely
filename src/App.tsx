@@ -1,19 +1,17 @@
-import { Route, Routes } from "react-router-dom";
+import { Provider } from "react-redux";
 
-import Detail from "./pages/private/detail";
-import Signup from "./pages/public/auth/signup";
+import { store } from "./redux";
+import Navigations from "./routes";
 
-import "./assets/css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/css/main.css";
 
-function App() {
+const App = () => {
   return (
-    <Routes>
-      <Route path="/detail" element={<Detail />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/" element={<Signup />} />
-    </Routes>
+    <Provider store={store}>
+      <Navigations />
+    </Provider>
   );
-}
+};
 
 export default App;
